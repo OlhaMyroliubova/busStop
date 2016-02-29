@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Tests" parallel="tests" thread-count="5">
+	<test name="Test1" verbose="1" parallel="true">
+		<parameter name="browserName" value="ff" />
+		<parameter name="browserVer" value="22" />
+		<classes>
+			<class name="tests.ScheduleTest">
+				<methods>
+					<include name="checkTime" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Test2" verbose="1" parallel="true">
+		<parameter name="browserName" value="ff" />
+		<parameter name="browserVer" value="24" />
+		<classes>
+			<class name="tests.ScheduleTest">
+				<methods>
+					<include name="checkTime" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Test3" verbose="1" parallel="true">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class name="tests.ScheduleTest">
+				<methods>
+					<include name="checkTime" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Test4" verbose="1" parallel="true">
+		<parameter name="browserName" value="ie" />
+		<classes>
+			<class name="tests.ScheduleTest">
+				<methods>
+					<include name="checkTime" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

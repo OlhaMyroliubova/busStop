@@ -1,0 +1,3 @@
+cmd /C start/MIN java -jar resources\selenium-server-standalone-2.39.0.jar -role hub -port 4446 -timeout 300 -browserTimeout 360
+cmd /C start/MIN java -jar resources\selenium-server-standalone-2.39.0.jar -role node -port 5599 -hub http://localhost:4446/grid/register -browser "browserName=firefox,version=22,firefox_binary=resources\ff22\firefox.exe,maxInstances=25" -browser "browserName=firefox,version=24,firefox_binary=resources\ff24\firefox.exe,maxInstances=25"
+cmd /C start/MIN java -jar resources\selenium-server-standalone-2.39.0.jar -role node -port 5590 -hub http://localhost:4446/grid/register -Dwebdriver.chrome.driver="resources\ChromeDriver\chromedriver.exe" -Dwebdriver.ie.driver="resources\IEDriver\IEDriverServer.exe"
