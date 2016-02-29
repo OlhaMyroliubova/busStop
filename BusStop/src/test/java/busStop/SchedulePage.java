@@ -17,6 +17,7 @@ public class SchedulePage {
 	private final String MINUTES_LIST="(//td[@class='cellmin'][%s]/font)[%s]";
 
 //vew line
+	//line for second commit 
 
 	@FindBy(xpath=STATIONS_LIST)
 	public List<WebElement> listOfStations;

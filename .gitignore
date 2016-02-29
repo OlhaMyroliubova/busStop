@@ -16,7 +16,7 @@
 # ignore trash
 **/*log*.txt
 /bin
-**/testng-failed.xml
+
 .metadata
 .recommenders
 
