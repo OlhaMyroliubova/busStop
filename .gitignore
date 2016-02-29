@@ -1,0 +1,23 @@
+**/target
+**/test-output
+/report
+
+# ignore Intellij IDEA files
+*.iml
+/.idea/
+
+# ignore Eclipse files
+**/.settings
+.classpath
+.project
+# ignore temp excel files (created when excel file is opened)
+**/~$*.xlsx
+
+# ignore trash
+**/*log*.txt
+/bin
+**/testng-failed.xml
+.metadata
+.recommenders
+
+**/*.class
