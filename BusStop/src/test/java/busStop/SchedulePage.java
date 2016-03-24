@@ -33,6 +33,7 @@ public class SchedulePage {
 	
 	public SchedulePage(WebDriver driver){
 		this.driver=driver;
+		///fact
 		PageFactory.initElements(driver, this);
 		}
 
